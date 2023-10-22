@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "18": "^0.0.0",
     "@heroicons/react": "^2.0.18",
+    "@iconify/icons-heroicons-solid": "^1.2.6",
+    "@react-icons/all-files": "^4.1.0",
+    "feather-icons": "^4.29.1",
     "heroicons": "^2.0.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "recharts": "^2.9.0"
   },
   "devDependencies": {
