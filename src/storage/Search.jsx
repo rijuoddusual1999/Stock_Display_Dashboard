@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { mockSearchResults } from "../../test/Mock";
 import { XMarkIcon, MagnifyingGlassIcon} from '@heroicons/react/24/solid';
 import SearchResults from "./SearchResult";
+import ThemeContext from "../context/ContextTheme";
 
  
 const Search = () => {
   const [input, setInput] = useState("");
   const [bestMatches, setBestMatches] = useState(mockSearchResults.result);
-
+  const {darkMode} = useContext(ThemeContext);
+                                                                                            
   const clear = () => {
     setInput("");
   };
@@ -17,7 +19,7 @@ const Search = () => {
   };
 
   return (
-    <div className="flex items-center my-4 border-2 rounded-md relative z-50 w-75 bg-white border-neutral-200">
+    <div className={`flex items-center my-4 border-2 rounded-md relative z-50 w-75 ${darkMode ? "bg-white border-slate-400" : "bg-white border-slate-400"}`}>
       <input
         type="text"
         value={input}
