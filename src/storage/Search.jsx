@@ -10,7 +10,6 @@ const Search = () => {
 
   const clear = () => {
     setInput("");
-    setBestMatches([]);
   };
 
   const updateBestMatches = () => {
@@ -34,11 +33,11 @@ const Search = () => {
         }}
       />
 
-      {input && <button onClick={clear}>
+      {input && <button onClick={clear} className="m-1">
         <XMarkIcon className="w-5 h-5 bg-white" />
       </button>}
        
-       <button className="w-8 h-8 bg-gray-600 rounded-md flex justify-center items-center mr-2">
+       <button onClick={updateBestMatches} className="w-8 h-8 bg-gray-600 rounded-md flex justify-center items-center mr-2">
         <MagnifyingGlassIcon className="w-5 h-5 text-white" />
       </button>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "./Search";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = ({name}) =>{
 
@@ -8,6 +9,7 @@ const Header = ({name}) =>{
     <h1 className="text-3xl">{name}</h1>
     <Search/>
     </div>
+     <ThemeToggle/>
      </>;
 
 
