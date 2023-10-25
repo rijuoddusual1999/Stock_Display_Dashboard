@@ -13,7 +13,7 @@ export const searchSymbol = async (query) => {
 };
 
 export const fetchStockDetails = async (stockSymbol) => {
-  const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token=${process.env.REACT_APP_API_KEY}`;
+  const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token=${import.meta.env.VITE_API_URL}`;
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -25,7 +25,7 @@ export const fetchStockDetails = async (stockSymbol) => {
 };
 
 export const fetchQuote = async (stockSymbol) => {
-  const url = `${basePath}/quote?symbol=${stockSymbol}&token=${process.env.REACT_APP_API_KEY}`;
+  const url = `${basePath}/quote?symbol=${stockSymbol}&token=${import.meta.env.VITE_API_URL}`;
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -42,7 +42,7 @@ export const fetchHistoricalData = async (
   from,
   to
 ) => {
-  const url = `${basePath}/stock/candle?symbol=${stockSymbol}&resolution=${resolution}&from=${from}&to=${to}&token=${process.env.REACT_APP_API_KEY}`;
+  const url = `${basePath}/stock/candle?symbol=${stockSymbol}&resolution=${resolution}&from=${from}&to=${to}&token=${import.meta.env.VITE_API_URL}`;
   const response = await fetch(url);
 
   if (!response.ok) {

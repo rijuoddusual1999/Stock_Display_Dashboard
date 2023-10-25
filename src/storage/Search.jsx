@@ -14,6 +14,7 @@ const Search = () => {
 
   const clear = () => {
     setInput("");
+    setBestMatches([]);
   };
 
   const updateBestMatches = async () => {
