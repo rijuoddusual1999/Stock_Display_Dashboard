@@ -44,7 +44,15 @@ functionality.
     npm install
     ```
 
-4. Start the local hosting:
+
+4. Add a .env file in the project folder and put the Finnhub API key with the below extension:
+
+    
+    ```bash
+    VITE_API_URL = 'ADD_YOUR_API_KEY_HERE'
+    ```    
+
+5. Start the local hosting:
 
    
     ```bash
