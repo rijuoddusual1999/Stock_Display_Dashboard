@@ -17,7 +17,7 @@ import StockContext from "../context/ContextStocks.jsx";
 
 const Chart = () => {
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState("1W");
+  const [filter, setFilter] = useState("1D");
   const {stockSymbol} = useContext(StockContext);
 
 
@@ -59,7 +59,7 @@ const Chart = () => {
    
 
 
-  },[stockSymbol, filter])
+  },[stockSymbol, filter]);
 
   const formatData = (data) => {
 
