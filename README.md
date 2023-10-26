@@ -1,8 +1,53 @@
-# React + Vite
+# Stock Display Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Site Screenshot](./public/Stock.png)
+![Portfolio Site Screenshot](./public/StockDark.png)
 
-Currently, two official plugins are available:
+Hello Everyone this is my realtime stocks display website for various companies who has gone IPO.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+
+- **Wide Vairety of Timestamp**: A wide variety of timestamp from days to various months to five years of timestamp is available to give user a detailed overview of the companies journey so far.
+
+- **Dark & Light Mode**: The website integrates a dark and light theme which can be toggled using the moon button. 
+
+- **Responsive Design**: This site adapts seamlessly to various screen sizes and devices, ensuring a consistent user experience.
+
+## Technologies Utilized
+
+- [React](https://reactjs.org/): Used this JavaScript library to build the user interface and
+functionality.
+
+- [Tailwind](https://tailwindcss.com/) : Used this Tailwind Framework to design the website.
+
+- [FinnhubAPI](https://finnhub.io/docs/api) : Used this API key to fetch the realtime Stocks Data.
+
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/rijuoddusual1999/Stock_Display_Dashboard
+   ```
+
+2. Navigate to project directory:
+
+    ```bash
+    cd In the project folder
+    ```
+
+3. Install the required dependencies:
+
+    
+    ```bash
+    npm install
+    ```
+
+4. Start the local hosting:
+
+   
+    ```bash
+    npm run dev 
+    ```
+    
